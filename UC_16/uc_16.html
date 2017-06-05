@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>UC 16 - Cards</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script src="uc_16.js"></script>
+</head>
+
+<body>
+    <div class="container">
+        <h2>Cards</h2>
+        <br/>
+        <div>
+            <button class='btn btn-success btn-large' onclick="shuffleDeck()">Shuffle the Deck</button>
+        </div>
+        <br />
+        <div>
+            <div id="status" class=""></div>
+        </div>
+        <br />
+        <div id="numCards" class="control-group">
+            <label for="cards">Number of Cards</label>
+            <input type="text" name="cards" id="cards" placeholder="Number of cards to draw"> </div>
+        <div>
+            <button class='btn btn-success btn-large' onclick="draw('cards')">draw</button>
+        </div>
+    </div>
+    <br/> </body>
+
+</html>
